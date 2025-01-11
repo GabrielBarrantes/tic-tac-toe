@@ -18,3 +18,11 @@ $ npm install
 $ npm run dev
 ```
 
+## Deploy to GitHub pages
+
+```bash
+$ cp -r dist/* deploy/
+$ cd deploy/
+$ git commit -a -m "Update page"
+$ git push origin master
+```
