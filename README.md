@@ -2,6 +2,9 @@
 
 This is a small web application developed to showcase the ReactJS framework capabilities. Players take turns to play the tic-tac-toe game.
 
+![Screenshot_20250110_192739-1](https://github.com/user-attachments/assets/53dac4a6-5ada-4466-9ab1-9627496d42ac)
+
+
 ## Setup
 
 ```bash
