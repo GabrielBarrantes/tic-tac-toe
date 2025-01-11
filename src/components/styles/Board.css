@@ -1,0 +1,157 @@
+.justified-container {
+    display: flex;
+    justify-content: center;
+}
+
+.board-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 250px;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.board {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: none;
+}
+ 
+.board td {
+    border: 3px solid #D3D3D3;
+    padding: 10px;
+    text-align: center;
+}
+
+.board tr:first-child td {
+    border-top: none;
+}
+
+.board tr:last-child td {
+    border-bottom: none;
+}
+
+.board tr td:first-child {
+    border-left: none;
+}
+
+.board tr td:last-child {
+    border-right: none;
+}
+
+
+.line {
+    position: absolute;
+    top: 49%;
+    left: 4%;
+    width: 230px;
+    height: 5px; 
+    background-color: #34db85;
+    animation: drawLine 1s forwards;
+}
+
+.line2 {
+    position: absolute;
+    top: 15.5%;
+    left: 4%;
+    width: 230px;
+    height: 5px; 
+    background-color: #34db85;
+    animation: drawLine 1s forwards;
+}
+
+.line3 {
+    position: absolute;
+    top: 82.5%;
+    left: 4%;
+    width: 230px;
+    height: 5px; 
+    background-color: #34db85;
+    animation: drawLine 1s forwards;
+}
+
+.line4 {
+    position: absolute;
+    top: 2%;
+    left: 49%;
+    width: 5px;
+    height: 230px; 
+    background-color: #34db85;
+    animation: drawLineD 1s forwards;
+}
+
+.line5 {
+    position: absolute;
+    top: 2%;
+    left: 16.66%;
+    width: 5px;
+    height: 230px; 
+    background-color: #34db85;
+    animation: drawLineD 1s forwards;
+}
+
+.line6 {
+    position: absolute;
+    top: 2%;
+    left: 81%;
+    width: 5px;
+    height: 230px; 
+    background-color: #34db85;
+    animation: drawLineD 1s forwards;
+}
+
+@keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 230px;
+    }
+}
+
+@keyframes drawLineD {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 230px; 
+    }
+}
+
+.line7 {
+    position: absolute;
+    top: 0.5%;
+    left: 96%;
+    width: 5px;
+    height: 0;
+    background-color: #34db85;
+    transform-origin: top left;
+    transform: rotate(45deg);
+    animation: drawLineDia 1s forwards;
+}
+
+.line8 {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    width: 5px;
+    height: 0;
+    background-color: #34db85;
+    transform-origin: top left;
+    transform: rotate(-45deg);
+    animation: drawLineDia 1s forwards;
+}
+
+@keyframes drawLineDia {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 325px;
+    }
+}
